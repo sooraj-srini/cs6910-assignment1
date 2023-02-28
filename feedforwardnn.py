@@ -2,8 +2,46 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+class SGD:
+    def __init__(self, weights, bias, learning_rate: float):
+        self.learning_rate = learning_rate
+        self.weights = weights
+        self.bias = bias
+    
+
+    def step(self, dW: list[np.ndarray], db: list[np.ndarray]):
+        for i in range(1, len(self.weights)):
+            self.weights[i] -= self.learning_rate * dW[i]
+            self.bias[i] -= self.learning_rate * db[i]
+
+class Momentum:
+    def __init__(self, weights, bias, learning_rate: float, momentum: float):
+        self.learning_rate = learning_rate
+        self.momentum = momentum
+        self.vW = None
+        self.vb = None
+        self.weights = weights
+        self.bias = bias
+    def zero_grad(self):
+        self.vW = None
+        self.vb = None 
+
+    def step(self, dW: list[np.ndarray], db: list[np.ndarray]):
+        if self.vW is None:
+            self.vW = [None] * len(self.weights)
+            self.vb = [None] * len(self.weights)
+            for i in range(1, len(self.weights)):
+                self.vW[i] = np.zeros(self.weights[i].shape)
+                self.vb[i] = np.zeros(self.bias[i].shape)
+
+        for i in range(1, len(self.weights)):
+            self.vW[i] = self.momentum * self.vW[i] + dW[i]
+            self.vb[i] = self.momentum * self.vb[i] + db[i]
+            self.weights[i] -= self.learning_rate*self.vW[i]
+            self.bias[i] -= self.learning_rate*self.vb[i]
 
 class FeedforwardNN:
+
 
     def __init__(self, input_size: int, output_size: int, hidden_size_layers: list[int], activation_function: str):
         self.input_size = input_size
@@ -68,6 +106,8 @@ class FeedforwardNN:
             return tanh, derivative_tanh
         else:
             raise ValueError("Activation function not supported")
+    def use_activation(self, func: str):
+        self.activation, self.derivate_activation = self.activation_function(func)
 
     def forward(self, X: np.ndarray):
         # Forward pass
@@ -102,7 +142,7 @@ class FeedforwardNN:
         dlda[L] = -(y_train - y_pred)
         for layer in range(L, 0, -1):
             dW[layer] = activation[layer-1].T@dlda[layer]
-            db[layer] = dlda[layer]
+            db[layer] = np.sum(dlda[layer], axis=0)
 
             if layer == 1:
                 break
@@ -115,39 +155,28 @@ class FeedforwardNN:
         return dW, db
 
     def fit(self, X_train, y_train, learning_rate, max_iterations, batch):
+        opt = SGD(self.weights, self.bias, learning_rate)
+        # opt = Momentum(self.weights, self.bias, learning_rate, 0.9)
         for iter in range(max_iterations):
+            opt.zero_grad()
             print("Iteration: ", iter)
             y_pred, pre_activation, activation = self.forward(X_train)
-            deltaW = [None]*(self.layers+1)
-            deltab = [None]*(self.layers+1)
-            for index in range(len(X_train)):
-                x_row = X_train[index:index + 1]
-                y_row = y_train[index:index + 1]
+            for index in range(0, len(X_train), batch):
+                x_row = X_train[index:index + batch]
+                y_row = y_train[index:index + batch]
                 y_pred, pre_activation, activation = self.forward(x_row)
                 dW, db = self.backpropagate(
                     pre_activation, activation, y_row, y_pred)
-                for i in range(1,len(self.weights)):
-                    if deltaW[i] is None:
-                        deltaW[i] = dW[i]
-                        deltab[i] = db[i]
-                    else:
-                        deltaW[i] += dW[i]
-                        deltab[i] += db[i]
+                opt.step(dW, db)
+                # for i in range(1,len(self.weights)):
                     # self.weights[i] -= learning_rate*dW[i]
                     # self.bias[i] -= learning_rate*db[i]
-
-                if index % batch == batch - 1 or index == len(X_train) - 1:
-                    for i in range(1,len(self.weights)):
-                        self.weights[i] -= learning_rate*deltaW[i]
-                        self.bias[i] -= learning_rate*deltab[i]
-                        deltaW[i] = None
-                        deltab[i] = None
             y_iter_pred = self.predict(X_train)
-            print("Accuracy: ", self.cross_entropy_loss(y_train, y_iter_pred))
+            print("Loss: ", self.cross_entropy_loss(y_train, y_iter_pred))
 
     def predict(self, X_test):
         y_pred, _, _ = self.forward(X_test)
         return y_pred
         # return np.argmax(y_pred, axis=1)
     def cross_entropy_loss(self, y_train, y_pred):
-        return -np.sum(y_train*np.log(y_pred))
+        return -np.sum(y_train*np.log(y_pred))/len(y_train)
