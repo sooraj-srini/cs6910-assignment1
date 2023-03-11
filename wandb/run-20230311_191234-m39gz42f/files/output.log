@@ -1,0 +1,14 @@
+Epoch:  1
+Iteration  1  of  5
+Epoch:  2
+Iteration  2  of  5
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:371: RuntimeWarning: divide by zero encountered in log
+  loss =  -np.sum(y_train*np.log(y_pred))/len(y_train)
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:371: RuntimeWarning: invalid value encountered in multiply
+  loss =  -np.sum(y_train*np.log(y_pred))/len(y_train)
+Epoch:  3
+Iteration  3  of  5
+Epoch:  4
+Iteration  4  of  5
+Epoch:  5
+Iteration  5  of  5

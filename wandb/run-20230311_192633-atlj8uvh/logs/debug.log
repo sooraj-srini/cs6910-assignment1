@@ -1,0 +1,646 @@
+2023-03-11 19:26:33,709 INFO    Thread-67 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:26:33,709 INFO    Thread-67 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:26:33,709 INFO    Thread-67 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:26:33,709 INFO    Thread-67 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'sweep_id': '0qbo64zc', 'run_id': 'atlj8uvh', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-0qbo64zc/config-atlj8uvh.yaml'}
+2023-03-11 19:26:33,709 INFO    Thread-67 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:26:33,710 INFO    Thread-67 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192633-atlj8uvh/logs/debug.log
+2023-03-11 19:26:33,710 INFO    Thread-67 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192633-atlj8uvh/logs/debug-internal.log
+2023-03-11 19:26:33,710 INFO    Thread-67 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d47b6d0>
+2023-03-11 19:26:33,710 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:26:33,710 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 32, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'momentum', 'weight_decay': 0, 'weight_initialisation': 'random'}
+config: {}
+2023-03-11 19:26:33,710 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:26:33,710 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:26:33,715 INFO    Thread-67 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:26:33,718 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:26:33,730 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 32, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'momentum', 'weight_decay': 0, 'weight_initialisation': 'random'}
+2023-03-11 19:26:33,730 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:26:33,730 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:26:33,730 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:26:33,733 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:26:34,641 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:26:34,712 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:26:34,712 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:26:34,747 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:26:34,747 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:26:34,747 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:26:34,747 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:26:34,747 INFO    Thread-67 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:27:04,442 INFO    MainThread:13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:27:04,443 INFO    MainThread:13098 [wandb_init.py:_pause_backend():403] pausing backend
+2023-03-11 19:27:07,822 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/atlj8uvh
+2023-03-11 19:27:07,822 INFO    Thread-67 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:27:07,822 INFO    Thread-67 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:27:07,822 INFO    Thread-67 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:27:07,822 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:27:07,823 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:27:07,823 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:27:09,239 INFO    MainThread:13098 [pyagent.py:run():314] Starting sweep agent: entity=None, project=None, count=15
+2023-03-11 19:27:13,721 WARNING MsgRouterThr:13098 [router.py:message_loop():77] message_loop has been closed
+2023-03-11 19:27:14,000 ERROR   Thread-71 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:27:15,851 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:27:15,851 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:27:15,851 INFO    Thread-67 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/atlj8uvh
+2023-03-11 19:27:15,852 INFO    Thread-67 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:27:15,852 INFO    Thread-67 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'sweep_id': 's24rbyxt', 'run_id': 'vrfejt2d', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-vrfejt2d.yaml'}
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_setup.py:_flush():68] cleaning up jupyter logic
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192715-vrfejt2d/logs/debug.log
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192715-vrfejt2d/logs/debug-internal.log
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d5829e0>
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 16, 'epochs': 5, 'hidden_layer_size': 64, 'learning_rate': 0.0001, 'num_hidden_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0, 'weight_initialisation': 'random'}
+config: {}
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:27:15,995 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:27:15,998 INFO    Thread-71 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:27:16,000 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:27:16,014 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 16, 'epochs': 5, 'hidden_layer_size': 64, 'learning_rate': 0.0001, 'num_hidden_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0, 'weight_initialisation': 'random'}
+2023-03-11 19:27:16,015 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:27:16,015 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:27:16,015 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:27:16,018 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:27:16,753 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:27:16,830 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:27:16,830 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:27:16,868 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:27:16,869 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:27:16,869 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:27:16,869 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:27:16,870 INFO    Thread-71 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:27:38,847 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/vrfejt2d
+2023-03-11 19:27:38,848 INFO    Thread-71 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:27:38,848 INFO    Thread-71 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:27:38,848 INFO    Thread-71 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:27:38,849 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:27:38,849 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:27:38,850 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:27:47,413 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:27:47,414 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:27:47,420 INFO    Thread-71 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:27:49,557 ERROR   Thread-74 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'uaeh7n7d', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-uaeh7n7d.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192751-uaeh7n7d/logs/debug.log
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192751-uaeh7n7d/logs/debug-internal.log
+2023-03-11 19:27:51,329 INFO    Thread-74 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d4c7940>
+2023-03-11 19:27:51,330 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:27:51,330 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 32, 'learning_rate': 0.0001, 'num_hidden_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0.0005, 'weight_initialisation': 'random'}
+config: {}
+2023-03-11 19:27:51,330 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:27:51,330 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:27:51,337 INFO    Thread-74 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:27:51,341 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:27:51,351 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 32, 'learning_rate': 0.0001, 'num_hidden_layers': 3, 'optimizer': 'nadam', 'weight_decay': 0.0005, 'weight_initialisation': 'random'}
+2023-03-11 19:27:51,352 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:27:51,352 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:27:51,352 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:27:51,355 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:27:52,154 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:27:52,237 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:27:52,237 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:27:52,264 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:27:52,264 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:27:52,264 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:27:52,264 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:27:52,265 INFO    Thread-74 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:28:09,043 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/uaeh7n7d
+2023-03-11 19:28:09,043 INFO    Thread-74 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:28:09,043 INFO    Thread-74 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:28:09,044 INFO    Thread-74 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:28:09,044 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:28:09,044 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:28:09,045 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:28:15,674 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:28:15,675 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:28:15,681 INFO    Thread-74 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:28:26,841 ERROR   Thread-77 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'zcsc6nl5', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-zcsc6nl5.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192828-zcsc6nl5/logs/debug.log
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_192828-zcsc6nl5/logs/debug-internal.log
+2023-03-11 19:28:28,602 INFO    Thread-77 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d522a70>
+2023-03-11 19:28:28,603 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:28:28,603 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'sigmoid', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'adam', 'weight_decay': 0.0005, 'weight_initialisation': 'random'}
+config: {}
+2023-03-11 19:28:28,603 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:28:28,603 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:28:28,606 INFO    Thread-77 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:28:28,609 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:28:28,618 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'sigmoid', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'adam', 'weight_decay': 0.0005, 'weight_initialisation': 'random'}
+2023-03-11 19:28:28,619 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:28:28,619 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:28:28,619 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:28:28,621 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:28:29,427 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:28:29,510 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:28:29,510 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:28:29,545 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:28:29,545 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:28:29,545 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:28:29,545 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:28:29,546 INFO    Thread-77 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:31:54,498 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/zcsc6nl5
+2023-03-11 19:31:54,499 INFO    Thread-77 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:31:54,499 INFO    Thread-77 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:31:54,499 INFO    Thread-77 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:31:54,499 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:31:54,500 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:31:54,500 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:32:02,505 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:32:02,505 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:32:02,508 INFO    Thread-77 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:32:07,645 ERROR   Thread-80 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'fe4fkh0o', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-fe4fkh0o.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193209-fe4fkh0o/logs/debug.log
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193209-fe4fkh0o/logs/debug-internal.log
+2023-03-11 19:32:09,171 INFO    Thread-80 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d50ef50>
+2023-03-11 19:32:09,172 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:32:09,172 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 16, 'epochs': 10, 'hidden_layer_size': 64, 'learning_rate': 0.001, 'num_hidden_layers': 4, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:32:09,172 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:32:09,172 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:32:09,179 INFO    Thread-80 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:32:09,183 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:32:09,199 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 16, 'epochs': 10, 'hidden_layer_size': 64, 'learning_rate': 0.001, 'num_hidden_layers': 4, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:32:09,199 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:32:09,199 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:32:09,199 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:32:09,202 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:32:09,999 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:32:10,086 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:32:10,086 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:32:10,122 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:32:10,123 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:32:10,123 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:32:10,123 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:32:10,123 INFO    Thread-80 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:32:57,601 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/fe4fkh0o
+2023-03-11 19:32:57,601 INFO    Thread-80 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:32:57,601 INFO    Thread-80 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:32:57,601 INFO    Thread-80 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:32:57,602 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:32:57,602 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:32:57,603 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:33:02,297 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:33:02,297 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:33:02,301 INFO    Thread-80 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:33:07,450 ERROR   Thread-83 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:33:09,604 INFO    Thread-83 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:33:09,604 INFO    Thread-83 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:33:09,604 INFO    Thread-83 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:33:09,604 INFO    Thread-83 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': '9y5ien3e', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-9y5ien3e.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:33:09,604 INFO    Thread-83 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:33:09,604 INFO    Thread-83 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193309-9y5ien3e/logs/debug.log
+2023-03-11 19:33:09,605 INFO    Thread-83 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193309-9y5ien3e/logs/debug-internal.log
+2023-03-11 19:33:09,605 INFO    Thread-83 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d35e950>
+2023-03-11 19:33:09,605 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:33:09,605 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_initialisation': 'random'}
+config: {}
+2023-03-11 19:33:09,605 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:33:09,605 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:33:09,611 INFO    Thread-83 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:33:09,614 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:33:09,625 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_initialisation': 'random'}
+2023-03-11 19:33:09,626 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:33:09,626 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:33:09,626 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:33:09,629 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:33:10,409 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:33:10,477 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:33:10,477 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:33:10,509 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:33:10,509 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:33:10,509 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:33:10,509 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:33:10,510 INFO    Thread-83 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:35:33,004 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/9y5ien3e
+2023-03-11 19:35:33,005 INFO    Thread-83 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:35:33,005 INFO    Thread-83 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:35:33,005 INFO    Thread-83 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:35:33,006 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:35:33,006 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:35:33,007 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:35:41,525 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:35:41,526 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:35:41,533 INFO    Thread-83 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:35:44,642 ERROR   Thread-86 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:35:46,158 INFO    Thread-86 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:35:46,158 INFO    Thread-86 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:35:46,158 INFO    Thread-86 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:35:46,158 INFO    Thread-86 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': '0og2qcot', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-0og2qcot.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:35:46,158 INFO    Thread-86 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:35:46,158 INFO    Thread-86 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193546-0og2qcot/logs/debug.log
+2023-03-11 19:35:46,159 INFO    Thread-86 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193546-0og2qcot/logs/debug-internal.log
+2023-03-11 19:35:46,159 INFO    Thread-86 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d37aad0>
+2023-03-11 19:35:46,159 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:35:46,159 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:35:46,159 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:35:46,159 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:35:46,161 INFO    Thread-86 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:35:46,163 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:35:46,173 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:35:46,173 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:35:46,173 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:35:46,173 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:35:46,175 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:35:46,879 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:35:46,952 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:35:46,952 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:35:46,993 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:35:46,993 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:35:46,993 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:35:46,993 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:35:46,994 INFO    Thread-86 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:37:28,290 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/0og2qcot
+2023-03-11 19:37:28,291 INFO    Thread-86 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:37:28,291 INFO    Thread-86 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:37:28,291 INFO    Thread-86 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:37:28,291 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:37:28,292 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:37:28,292 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:37:33,971 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:37:33,972 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:37:33,974 INFO    Thread-86 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:37:45,126 ERROR   Thread-89 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': '8jw1micy', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-8jw1micy.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193746-8jw1micy/logs/debug.log
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193746-8jw1micy/logs/debug-internal.log
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d422ec0>
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:37:46,576 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:37:46,578 INFO    Thread-89 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:37:46,580 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:37:46,591 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:37:46,592 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:37:46,592 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:37:46,592 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:37:46,595 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:37:47,399 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:37:47,458 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:37:47,459 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:37:47,481 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:37:47,481 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:37:47,481 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:37:47,481 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:37:47,481 INFO    Thread-89 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:39:48,844 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/8jw1micy
+2023-03-11 19:39:48,844 INFO    Thread-89 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:39:48,844 INFO    Thread-89 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:39:48,845 INFO    Thread-89 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:39:48,845 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:39:48,845 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:39:48,846 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:39:54,645 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:39:54,645 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:39:54,647 INFO    Thread-89 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:39:57,813 ERROR   Thread-92 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'qao9mthm', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-qao9mthm.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193959-qao9mthm/logs/debug.log
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_193959-qao9mthm/logs/debug-internal.log
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d42ea70>
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:39:59,687 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 64, 'epochs': 5, 'hidden_layer_size': 128, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:39:59,688 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:39:59,688 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:39:59,690 INFO    Thread-92 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:39:59,692 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:39:59,703 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 64, 'epochs': 5, 'hidden_layer_size': 128, 'learning_rate': 0.001, 'num_hidden_layers': 5, 'optimizer': 'adam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:39:59,704 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:39:59,704 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:39:59,704 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:39:59,707 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:40:00,389 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:40:00,484 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:40:00,484 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:40:00,522 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:40:00,523 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:40:00,523 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:40:00,523 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:40:00,523 INFO    Thread-92 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:40:56,454 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/qao9mthm
+2023-03-11 19:40:56,455 INFO    Thread-92 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:40:56,455 INFO    Thread-92 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:40:56,455 INFO    Thread-92 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:40:56,455 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:40:56,456 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:40:56,456 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:41:01,318 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:41:01,318 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:41:01,320 INFO    Thread-92 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:41:04,431 ERROR   Thread-95 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'yqwuc47t', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-yqwuc47t.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194106-yqwuc47t/logs/debug.log
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194106-yqwuc47t/logs/debug-internal.log
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d287760>
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'rmsprop', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:41:06,257 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:41:06,260 INFO    Thread-95 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:41:06,261 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:41:06,271 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'rmsprop', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:41:06,271 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:41:06,272 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:41:06,272 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:41:06,274 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:41:07,081 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:41:07,139 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:41:07,139 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:41:07,161 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:41:07,161 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:41:07,161 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:41:07,161 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:41:07,161 INFO    Thread-95 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:42:37,534 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/yqwuc47t
+2023-03-11 19:42:37,534 INFO    Thread-95 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:42:37,534 INFO    Thread-95 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:42:37,534 INFO    Thread-95 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:42:37,535 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:42:37,535 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:42:37,535 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:42:44,505 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:42:44,505 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:42:44,508 INFO    Thread-95 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:42:49,647 ERROR   Thread-98 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'ls3aan33', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-ls3aan33.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194251-ls3aan33/logs/debug.log
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194251-ls3aan33/logs/debug-internal.log
+2023-03-11 19:42:51,126 INFO    Thread-98 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d2b18a0>
+2023-03-11 19:42:51,127 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:42:51,127 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 16, 'epochs': 10, 'hidden_layer_size': 64, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nesterov', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:42:51,127 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:42:51,127 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:42:51,129 INFO    Thread-98 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:42:51,131 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:42:51,141 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 16, 'epochs': 10, 'hidden_layer_size': 64, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nesterov', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:42:51,141 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:42:51,141 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:42:51,141 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:42:51,144 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:42:51,815 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:42:51,896 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:42:51,896 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:42:51,928 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:42:51,929 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:42:51,929 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:42:51,929 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:42:51,929 INFO    Thread-98 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:43:44,835 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/ls3aan33
+2023-03-11 19:43:44,835 INFO    Thread-98 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:43:44,835 INFO    Thread-98 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:43:44,835 INFO    Thread-98 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:43:44,836 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:43:44,836 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:43:44,837 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:43:50,176 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:43:50,176 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:43:50,178 INFO    Thread-98 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:43:55,407 ERROR   Thread-101 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'a5axye9m', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-a5axye9m.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194357-a5axye9m/logs/debug.log
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194357-a5axye9m/logs/debug-internal.log
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d153970>
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'tanh', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:43:57,368 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:43:57,371 INFO    Thread-101 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:43:57,373 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:43:57,383 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'tanh', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:43:57,384 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:43:57,384 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:43:57,384 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:43:57,387 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:43:58,200 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:43:58,289 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:43:58,289 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:43:58,314 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:43:58,314 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:43:58,314 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:43:58,314 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:43:58,314 INFO    Thread-101 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:45:59,881 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/a5axye9m
+2023-03-11 19:45:59,881 INFO    Thread-101 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:45:59,882 INFO    Thread-101 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:45:59,882 INFO    Thread-101 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:45:59,882 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:45:59,883 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:45:59,883 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:46:05,242 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:46:05,242 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:46:05,244 INFO    Thread-101 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:46:07,370 ERROR   Thread-104 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'r9quj9ub', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-r9quj9ub.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194609-r9quj9ub/logs/debug.log
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194609-r9quj9ub/logs/debug-internal.log
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d189990>
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'random'}
+config: {}
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:46:09,157 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:46:09,160 INFO    Thread-104 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:46:09,162 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:46:09,176 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'random'}
+2023-03-11 19:46:09,177 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:46:09,177 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:46:09,177 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:46:09,180 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:46:09,979 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:46:10,037 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:46:10,037 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:46:10,061 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:46:10,061 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:46:10,061 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:46:10,061 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:46:10,061 INFO    Thread-104 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:48:23,539 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/r9quj9ub
+2023-03-11 19:48:23,539 INFO    Thread-104 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:48:23,540 INFO    Thread-104 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:48:23,540 INFO    Thread-104 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:48:23,540 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:48:23,540 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:48:23,541 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:48:30,242 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:48:30,242 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:48:30,246 INFO    Thread-104 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:48:41,351 ERROR   Thread-107 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:48:42,861 INFO    Thread-107 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:48:42,861 INFO    Thread-107 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:48:42,861 INFO    Thread-107 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'ry7rc08a', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-ry7rc08a.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194842-ry7rc08a/logs/debug.log
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194842-ry7rc08a/logs/debug-internal.log
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d1f6590>
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 4, 'optimizer': 'sgd', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:48:42,862 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:48:42,864 INFO    Thread-107 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:48:42,866 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:48:42,876 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 32, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 4, 'optimizer': 'sgd', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:48:42,876 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:48:42,876 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:48:42,876 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:48:42,879 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:48:43,682 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:48:43,783 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:48:43,783 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:48:43,805 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:48:43,805 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:48:43,805 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:48:43,805 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:48:43,806 INFO    Thread-107 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:49:42,024 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/ry7rc08a
+2023-03-11 19:49:42,025 INFO    Thread-107 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:49:42,025 INFO    Thread-107 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:49:42,025 INFO    Thread-107 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:49:42,026 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:49:42,026 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:49:42,026 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:49:50,217 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:49:50,217 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:49:50,219 INFO    Thread-107 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:49:53,330 ERROR   Thread-110 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:49:54,950 INFO    Thread-110 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:49:54,950 INFO    Thread-110 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:49:54,950 INFO    Thread-110 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:49:54,950 INFO    Thread-110 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'nlmkfm8z', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-nlmkfm8z.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:49:54,950 INFO    Thread-110 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:49:54,950 INFO    Thread-110 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194954-nlmkfm8z/logs/debug.log
+2023-03-11 19:49:54,951 INFO    Thread-110 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_194954-nlmkfm8z/logs/debug-internal.log
+2023-03-11 19:49:54,951 INFO    Thread-110 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d1c9c60>
+2023-03-11 19:49:54,951 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:49:54,951 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 16, 'epochs': 5, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'rmsprop', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:49:54,951 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:49:54,951 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:49:54,953 INFO    Thread-110 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:49:54,955 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:49:54,964 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 16, 'epochs': 5, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'rmsprop', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:49:54,964 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:49:54,965 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:49:54,965 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:49:54,967 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:49:55,772 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:49:55,836 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:49:55,836 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:49:55,859 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:49:55,859 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:49:55,859 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:49:55,859 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:49:55,859 INFO    Thread-110 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:51:24,469 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/nlmkfm8z
+2023-03-11 19:51:24,470 INFO    Thread-110 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:51:24,470 INFO    Thread-110 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:51:24,470 INFO    Thread-110 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:51:24,470 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:51:24,471 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:51:24,474 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:51:30,979 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:51:30,979 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:51:30,981 INFO    Thread-110 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
+2023-03-11 19:51:33,088 ERROR   Thread-113 (_run_job):13098 [jupyter.py:notebook_metadata():232] Failed to detect the name of this notebook, you can set it manually with the WANDB_NOTEBOOK_NAME environment variable to enable code saving.
+2023-03-11 19:51:34,688 INFO    Thread-113 (_run_job):13098 [wandb_setup.py:_flush():68] Configure stats pid to 13098
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'uncategorized', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'bo252ye8', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-s24rbyxt/config-bo252ye8.yaml', 'sweep_id': 's24rbyxt'}
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_195134-bo252ye8/logs/debug.log
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_195134-bo252ye8/logs/debug-internal.log
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_init.py:_jupyter_setup():438] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7fd40d1f5480>
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():532] calling init triggers
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():538] wandb.init called with sweep_config: {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+config: {}
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():588] starting backend
+2023-03-11 19:51:34,689 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():592] setting up manager
+2023-03-11 19:51:34,691 INFO    Thread-113 (_run_job):13098 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-11 19:51:34,693 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():599] backend started and connected
+2023-03-11 19:51:34,703 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_config_callback():1250] config_cb None None {'activation_function': 'relu', 'batch': 64, 'epochs': 10, 'hidden_layer_size': 128, 'learning_rate': 0.0001, 'num_hidden_layers': 5, 'optimizer': 'nadam', 'weight_decay': 0.5, 'weight_initialisation': 'xavier'}
+2023-03-11 19:51:34,704 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-11 19:51:34,704 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-11 19:51:34,704 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():687] updated telemetry
+2023-03-11 19:51:34,707 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-11 19:51:35,410 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-11 19:51:35,465 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_on_init():2143] got version response upgrade_message: "wandb version 0.13.11 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-03-11 19:51:35,465 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():775] starting run threads in backend
+2023-03-11 19:51:35,488 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-11 19:51:35,488 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-11 19:51:35,488 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-11 19:51:35,488 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-11 19:51:35,488 INFO    Thread-113 (_run_job):13098 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-11 19:53:39,369 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_finish():1854] finishing run cs20b075/uncategorized/bo252ye8
+2023-03-11 19:53:39,370 INFO    Thread-113 (_run_job):13098 [jupyter.py:save_history():449] not saving jupyter history
+2023-03-11 19:53:39,370 INFO    Thread-113 (_run_job):13098 [jupyter.py:save_ipynb():379] not saving jupyter notebook
+2023-03-11 19:53:39,370 INFO    Thread-113 (_run_job):13098 [wandb_init.py:_jupyter_teardown():420] cleaning up jupyter logic
+2023-03-11 19:53:39,370 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 0
+2023-03-11 19:53:39,371 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_restore():2066] restore
+2023-03-11 19:53:39,371 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_restore():2072] restore done
+2023-03-11 19:53:45,023 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-11 19:53:45,023 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-11 19:53:45,028 INFO    Thread-113 (_run_job):13098 [wandb_run.py:_footer_sync_info():3398] logging synced files
