@@ -1,0 +1,7 @@
+Epoch:  1
+Epoch:  2
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:91: RuntimeWarning: overflow encountered in exp
+  return 1 / (1 + np.exp(-x))
+Epoch:  3
+Epoch:  4
+Epoch:  5

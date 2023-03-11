@@ -1,0 +1,34 @@
+2023-03-01 17:46:56,497 INFO    Thread-27 (_run_job):13363 [wandb_setup.py:_flush():68] Configure stats pid to 13363
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/.config/wandb/settings
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_setup.py:_flush():68] Loading settings from /home/sooraj/sem/dl/assignment-1/wandb/settings
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True', 'project': 'CS6910 Assignment 1', 'entity': 'cs20b075', 'root_dir': '/home/sooraj/sem/dl/assignment-1', 'run_id': 'u4vviu02', 'sweep_param_path': '/home/sooraj/sem/dl/assignment-1/wandb/sweep-ye0plyj8/config-u4vviu02.yaml', 'sweep_id': 'ye0plyj8'}
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_init.py:_log_setup():492] Logging user logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230301_174656-u4vviu02/logs/debug.log
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_init.py:_log_setup():493] Logging internal logs to /home/sooraj/sem/dl/assignment-1/wandb/run-20230301_174656-u4vviu02/logs/debug-internal.log
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():532] calling init triggers
+2023-03-01 17:46:56,498 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():538] wandb.init called with sweep_config: {'batch': 16, 'epochs': 10, 'hidden_layer_size': 64, 'learning_rate': 0.0001, 'num_hidden_layers': 5}
+config: {}
+2023-03-01 17:46:56,499 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():588] starting backend
+2023-03-01 17:46:56,499 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():592] setting up manager
+2023-03-01 17:46:56,509 INFO    Thread-27 (_run_job):13363 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2023-03-01 17:46:56,529 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():599] backend started and connected
+2023-03-01 17:46:56,612 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_config_callback():1250] config_cb None None {'batch': 16, 'epochs': 10, 'hidden_layer_size': 64, 'learning_rate': 0.0001, 'num_hidden_layers': 5}
+2023-03-01 17:46:56,614 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_label_probe_notebook():1203] probe notebook
+2023-03-01 17:46:56,614 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_label_probe_notebook():1213] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-03-01 17:46:56,614 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():687] updated telemetry
+2023-03-01 17:46:56,638 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():727] communicating run to backend with 60.0 second timeout
+2023-03-01 17:46:57,689 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_on_init():2134] communicating current version
+2023-03-01 17:46:57,957 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_on_init():2143] got version response 
+2023-03-01 17:46:57,957 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():775] starting run threads in backend
+2023-03-01 17:46:58,090 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_console_start():2114] atexit reg
+2023-03-01 17:46:58,091 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_redirect():1969] redirect: SettingsConsole.WRAP_RAW
+2023-03-01 17:46:58,091 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_redirect():2034] Wrapping output streams.
+2023-03-01 17:46:58,091 INFO    Thread-27 (_run_job):13363 [wandb_run.py:_redirect():2059] Redirects installed.
+2023-03-01 17:46:58,092 INFO    Thread-27 (_run_job):13363 [wandb_init.py:init():817] run started, returning control to user process
+2023-03-01 17:47:50,752 INFO    Thread-23 (_run_job):13363 [wandb_run.py:_finish():1854] finishing run cs20b075/CS6910 Assignment 1/u4vviu02
+2023-03-01 17:47:50,761 INFO    Thread-23 (_run_job):13363 [wandb_run.py:_atexit_cleanup():2083] got exitcode: 1
+2023-03-01 17:47:50,761 INFO    Thread-23 (_run_job):13363 [wandb_run.py:_restore():2066] restore
+2023-03-01 17:47:50,762 INFO    Thread-23 (_run_job):13363 [wandb_run.py:_restore():2072] restore done
+2023-03-01 17:47:57,666 INFO    Thread-23 (_run_job):13363 [wandb_run.py:_footer_history_summary_info():3442] rendering history
+2023-03-01 17:47:57,666 INFO    Thread-23 (_run_job):13363 [wandb_run.py:_footer_history_summary_info():3474] rendering summary
+2023-03-01 17:47:57,677 INFO    Thread-23 (_run_job):13363 [wandb_run.py:_footer_sync_info():3398] logging synced files

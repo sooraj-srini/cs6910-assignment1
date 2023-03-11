@@ -1,0 +1,6 @@
+
+Epoch:  1
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:91: RuntimeWarning: overflow encountered in exp
+  return 1 / (1 + np.exp(-x))
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:187: RuntimeWarning: divide by zero encountered in log
+  return -np.sum(y_train*np.log(y_pred))/len(y_train)

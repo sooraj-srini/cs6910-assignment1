@@ -1,0 +1,292 @@
+2023-03-11 11:24:39,540 INFO    StreamThr :10459 [internal.py:wandb_internal():87] W&B internal server running at pid: 10459, started at: 2023-03-11 11:24:39.540242
+2023-03-11 11:24:39,543 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status
+2023-03-11 11:24:39,546 INFO    WriterThread:10459 [datastore.py:open_for_write():85] open: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/run-wyufw46x.wandb
+2023-03-11 11:24:39,546 DEBUG   SenderThread:10459 [sender.py:send():336] send: header
+2023-03-11 11:24:39,547 DEBUG   SenderThread:10459 [sender.py:send():336] send: run
+2023-03-11 11:24:40,508 INFO    SenderThread:10459 [dir_watcher.py:__init__():216] watching files in: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files
+2023-03-11 11:24:40,508 INFO    SenderThread:10459 [sender.py:_start_run_threads():1067] run started: wyufw46x with start time 1678514078.558054
+2023-03-11 11:24:40,509 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:40,509 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:40,511 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: check_version
+2023-03-11 11:24:40,511 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: check_version
+2023-03-11 11:24:40,647 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: run_start
+2023-03-11 11:24:40,651 DEBUG   HandlerThread:10459 [system_info.py:__init__():31] System info init
+2023-03-11 11:24:40,651 DEBUG   HandlerThread:10459 [system_info.py:__init__():46] System info init done
+2023-03-11 11:24:40,651 INFO    HandlerThread:10459 [system_monitor.py:start():151] Starting system monitor
+2023-03-11 11:24:40,652 INFO    SystemMonitor:10459 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-11 11:24:40,652 INFO    HandlerThread:10459 [system_monitor.py:probe():172] Collecting system info
+2023-03-11 11:24:40,653 INFO    SystemMonitor:10459 [interfaces.py:start():168] Started cpu
+2023-03-11 11:24:40,654 INFO    SystemMonitor:10459 [interfaces.py:start():168] Started disk
+2023-03-11 11:24:40,654 INFO    SystemMonitor:10459 [interfaces.py:start():168] Started memory
+2023-03-11 11:24:40,655 INFO    SystemMonitor:10459 [interfaces.py:start():168] Started network
+2023-03-11 11:24:40,661 DEBUG   HandlerThread:10459 [system_info.py:probe():195] Probing system
+2023-03-11 11:24:40,662 DEBUG   HandlerThread:10459 [system_info.py:_probe_git():180] Probing git
+2023-03-11 11:24:40,670 DEBUG   HandlerThread:10459 [system_info.py:_probe_git():188] Probing git done
+2023-03-11 11:24:40,671 DEBUG   HandlerThread:10459 [system_info.py:probe():241] Probing system done
+2023-03-11 11:24:40,671 DEBUG   HandlerThread:10459 [system_monitor.py:probe():181] {'os': 'Linux-6.2.2-zen2-1-zen-x86_64-with-glibc2.37', 'python': '3.10.9', 'heartbeatAt': '2023-03-11T05:54:40.662102', 'startedAt': '2023-03-11T05:54:33.032323', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://www.github.com/sooraj-srini/cs6910-assignment1', 'commit': 'fa154a22f93f6e3ef05c497d0dc047daccfaa389'}, 'email': 'cs20b075@smail.iitm.ac.in', 'root': '/home/sooraj/sem/dl/assignment-1', 'host': 'archbtw', 'username': 'sooraj', 'executable': '/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 1.22775, 'min': 400.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 1.4, 'min': 400.0, 'max': 4700.0}, {'current': 0.4, 'min': 400.0, 'max': 4700.0}, {'current': 0.582, 'min': 400.0, 'max': 4700.0}, {'current': 0.466, 'min': 400.0, 'max': 4700.0}, {'current': 1.4, 'min': 400.0, 'max': 4700.0}, {'current': 1.3, 'min': 400.0, 'max': 4700.0}, {'current': 0.58, 'min': 400.0, 'max': 4700.0}, {'current': 0.399, 'min': 400.0, 'max': 4700.0}], 'disk': {'total': 48.912994384765625, 'used': 43.87992858886719}, 'memory': {'total': 11.417682647705078}}
+2023-03-11 11:24:40,671 INFO    HandlerThread:10459 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-11 11:24:40,671 INFO    HandlerThread:10459 [system_monitor.py:probe():185] Publishing system info
+2023-03-11 11:24:40,671 DEBUG   HandlerThread:10459 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-11 11:24:40,672 DEBUG   HandlerThread:10459 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-11 11:24:40,673 INFO    HandlerThread:10459 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-11 11:24:40,673 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:40,674 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-11 11:24:40,707 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-11 11:24:40,707 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: stop_status
+2023-03-11 11:24:41,122 DEBUG   SenderThread:10459 [sender.py:send():336] send: telemetry
+2023-03-11 11:24:41,320 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:41,320 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:41,321 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_0_525f4d9a0063533ca36d.png with policy now
+2023-03-11 11:24:41,322 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:41,322 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:41,323 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:41,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-summary.json
+2023-03-11 11:24:41,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-metadata.json
+2023-03-11 11:24:41,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/requirements.txt
+2023-03-11 11:24:41,511 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_0_525f4d9a0063533ca36d.png
+2023-03-11 11:24:41,511 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media
+2023-03-11 11:24:41,511 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images
+2023-03-11 11:24:41,581 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:41,582 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:41,582 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_1_9b08cb2e9180f2760638.png with policy now
+2023-03-11 11:24:41,583 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:41,583 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:41,583 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:41,726 INFO    wandb-upload_0:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/owo00icj-wandb-metadata.json
+2023-03-11 11:24:41,913 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:41,913 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_2_bcffa1a8087186341bb7.png with policy now
+2023-03-11 11:24:41,914 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:41,915 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:41,916 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:41,917 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:42,194 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:42,195 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_3_6d660a8428b942a27e45.png with policy now
+2023-03-11 11:24:42,195 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:42,196 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:42,197 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:42,198 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:42,279 INFO    wandb-upload_1:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/khbotc5p-media/images/examples_0_525f4d9a0063533ca36d.png
+2023-03-11 11:24:42,424 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:42,424 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:42,425 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_4_9ef004c71bc910d2258b.png with policy now
+2023-03-11 11:24:42,425 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:42,426 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:42,426 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:42,488 INFO    wandb-upload_2:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/6ly0r2d3-media/images/examples_1_9b08cb2e9180f2760638.png
+2023-03-11 11:24:42,509 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-summary.json
+2023-03-11 11:24:42,509 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_1_9b08cb2e9180f2760638.png
+2023-03-11 11:24:42,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_2_bcffa1a8087186341bb7.png
+2023-03-11 11:24:42,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_4_9ef004c71bc910d2258b.png
+2023-03-11 11:24:42,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_3_6d660a8428b942a27e45.png
+2023-03-11 11:24:42,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images
+2023-03-11 11:24:42,675 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:42,676 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:42,677 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_5_cb14507203f6f6d5f602.png with policy now
+2023-03-11 11:24:42,677 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:42,677 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:42,680 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:42,825 INFO    wandb-upload_0:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/sopknwim-media/images/examples_2_bcffa1a8087186341bb7.png
+2023-03-11 11:24:42,959 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:42,959 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:42,960 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_6_0e9724805d86b1b2d1fe.png with policy now
+2023-03-11 11:24:42,961 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:42,961 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:42,961 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:43,085 INFO    wandb-upload_3:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/b9dvr5zd-media/images/examples_3_6d660a8428b942a27e45.png
+2023-03-11 11:24:43,228 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:43,228 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:43,228 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_7_9137f3fe872503a35a2e.png with policy now
+2023-03-11 11:24:43,229 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:43,230 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:43,230 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:43,323 INFO    wandb-upload_1:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/zl3n2twf-media/images/examples_0_525f4d9a0063533ca36d.png
+2023-03-11 11:24:43,495 INFO    wandb-upload_2:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/sgefxuqq-media/images/examples_1_9b08cb2e9180f2760638.png
+2023-03-11 11:24:43,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-summary.json
+2023-03-11 11:24:43,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_7_9137f3fe872503a35a2e.png
+2023-03-11 11:24:43,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_6_0e9724805d86b1b2d1fe.png
+2023-03-11 11:24:43,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_5_cb14507203f6f6d5f602.png
+2023-03-11 11:24:43,511 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images
+2023-03-11 11:24:43,517 INFO    wandb-upload_4:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/6bc3yzrn-media/images/examples_4_9ef004c71bc910d2258b.png
+2023-03-11 11:24:43,522 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:43,523 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:43,523 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_8_0d13292746917fb65983.png with policy now
+2023-03-11 11:24:43,524 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:43,524 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:43,525 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:43,646 INFO    wandb-upload_5:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/y4uvxnn7-media/images/examples_5_cb14507203f6f6d5f602.png
+2023-03-11 11:24:43,808 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: partial_history
+2023-03-11 11:24:43,809 DEBUG   SenderThread:10459 [sender.py:send():336] send: files
+2023-03-11 11:24:43,809 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file media/images/examples_9_02b05911686c49948ffa.png with policy now
+2023-03-11 11:24:43,810 DEBUG   SenderThread:10459 [sender.py:send():336] send: history
+2023-03-11 11:24:43,810 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: summary_record
+2023-03-11 11:24:43,811 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:24:44,057 INFO    wandb-upload_0:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/uercrr2m-media/images/examples_2_bcffa1a8087186341bb7.png
+2023-03-11 11:24:44,061 INFO    wandb-upload_6:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/vmdxol0t-media/images/examples_6_0e9724805d86b1b2d1fe.png
+2023-03-11 11:24:44,184 INFO    wandb-upload_3:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/5ys1xumf-media/images/examples_7_9137f3fe872503a35a2e.png
+2023-03-11 11:24:44,314 INFO    wandb-upload_1:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/oq1we9xo-media/images/examples_3_6d660a8428b942a27e45.png
+2023-03-11 11:24:44,446 INFO    wandb-upload_4:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/tuzpafqx-media/images/examples_8_0d13292746917fb65983.png
+2023-03-11 11:24:44,510 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-summary.json
+2023-03-11 11:24:44,511 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_8_0d13292746917fb65983.png
+2023-03-11 11:24:44,511 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_9_02b05911686c49948ffa.png
+2023-03-11 11:24:44,511 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images
+2023-03-11 11:24:44,620 INFO    wandb-upload_2:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/qg4pn3nv-media/images/examples_4_9ef004c71bc910d2258b.png
+2023-03-11 11:24:44,640 INFO    wandb-upload_5:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/aqw58jxe-media/images/examples_9_02b05911686c49948ffa.png
+2023-03-11 11:24:44,812 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:24:45,013 INFO    wandb-upload_0:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/u4sp17gd-media/images/examples_5_cb14507203f6f6d5f602.png
+2023-03-11 11:24:45,210 INFO    wandb-upload_6:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/243waof1-media/images/examples_7_9137f3fe872503a35a2e.png
+2023-03-11 11:24:45,211 INFO    wandb-upload_3:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/x3sap4f5-media/images/examples_6_0e9724805d86b1b2d1fe.png
+2023-03-11 11:24:45,464 INFO    wandb-upload_1:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/aenioais-media/images/examples_8_0d13292746917fb65983.png
+2023-03-11 11:24:45,598 INFO    wandb-upload_4:10459 [upload_job.py:push():138] Uploaded file /tmp/tmp4w7nyepmwandb/59pvve9a-media/images/examples_9_02b05911686c49948ffa.png
+2023-03-11 11:24:49,813 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:24:54,814 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:24:55,705 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:24:59,815 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:00,706 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:25:04,816 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:05,707 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:25:09,822 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:10,528 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/config.yaml
+2023-03-11 11:25:10,708 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:25:15,306 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:15,710 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:25:20,307 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:20,711 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:25:25,308 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:25,711 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:25:30,310 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:30,713 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: keepalive
+2023-03-11 11:25:32,364 DEBUG   SenderThread:10459 [sender.py:send():336] send: telemetry
+2023-03-11 11:25:32,365 DEBUG   SenderThread:10459 [sender.py:send():336] send: exit
+2023-03-11 11:25:32,365 INFO    SenderThread:10459 [sender.py:send_exit():559] handling exit code: 0
+2023-03-11 11:25:32,365 INFO    SenderThread:10459 [sender.py:send_exit():561] handling runtime: 51
+2023-03-11 11:25:32,368 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:25:32,368 INFO    SenderThread:10459 [sender.py:send_exit():567] send defer
+2023-03-11 11:25:32,369 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,369 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 0
+2023-03-11 11:25:32,369 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,370 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 0
+2023-03-11 11:25:32,370 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 1
+2023-03-11 11:25:32,370 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,370 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 1
+2023-03-11 11:25:32,370 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,370 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 1
+2023-03-11 11:25:32,370 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 2
+2023-03-11 11:25:32,371 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,371 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 2
+2023-03-11 11:25:32,371 INFO    HandlerThread:10459 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-11 11:25:32,371 DEBUG   SystemMonitor:10459 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-11 11:25:32,372 INFO    HandlerThread:10459 [interfaces.py:finish():175] Joined cpu
+2023-03-11 11:25:32,372 DEBUG   SystemMonitor:10459 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-11 11:25:32,372 INFO    HandlerThread:10459 [interfaces.py:finish():175] Joined disk
+2023-03-11 11:25:32,372 DEBUG   SystemMonitor:10459 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-11 11:25:32,372 INFO    HandlerThread:10459 [interfaces.py:finish():175] Joined memory
+2023-03-11 11:25:32,373 INFO    HandlerThread:10459 [interfaces.py:finish():175] Joined network
+2023-03-11 11:25:32,374 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,374 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 2
+2023-03-11 11:25:32,374 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 3
+2023-03-11 11:25:32,374 DEBUG   SenderThread:10459 [sender.py:send():336] send: stats
+2023-03-11 11:25:32,374 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,375 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 3
+2023-03-11 11:25:32,375 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,375 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 3
+2023-03-11 11:25:32,375 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 4
+2023-03-11 11:25:32,375 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,375 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 4
+2023-03-11 11:25:32,376 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,376 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 4
+2023-03-11 11:25:32,376 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 5
+2023-03-11 11:25:32,376 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,376 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 5
+2023-03-11 11:25:32,376 DEBUG   SenderThread:10459 [sender.py:send():336] send: summary
+2023-03-11 11:25:32,377 INFO    SenderThread:10459 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-11 11:25:32,377 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,377 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 5
+2023-03-11 11:25:32,377 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 6
+2023-03-11 11:25:32,377 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,378 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 6
+2023-03-11 11:25:32,378 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,378 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 6
+2023-03-11 11:25:32,383 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: status_report
+2023-03-11 11:25:32,543 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-summary.json
+2023-03-11 11:25:32,758 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 7
+2023-03-11 11:25:32,758 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,758 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 7
+2023-03-11 11:25:32,759 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,759 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 7
+2023-03-11 11:25:32,759 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 8
+2023-03-11 11:25:32,759 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,759 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 8
+2023-03-11 11:25:32,760 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,760 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 8
+2023-03-11 11:25:32,760 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 9
+2023-03-11 11:25:32,760 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:32,760 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 9
+2023-03-11 11:25:32,761 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:32,761 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 9
+2023-03-11 11:25:32,761 INFO    SenderThread:10459 [dir_watcher.py:finish():362] shutting down directory watcher
+2023-03-11 11:25:33,368 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-11 11:25:33,544 INFO    Thread-25 :10459 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/config.yaml
+2023-03-11 11:25:33,545 INFO    SenderThread:10459 [dir_watcher.py:finish():392] scan: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files
+2023-03-11 11:25:33,545 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/requirements.txt requirements.txt
+2023-03-11 11:25:33,545 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-metadata.json wandb-metadata.json
+2023-03-11 11:25:33,545 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/config.yaml config.yaml
+2023-03-11 11:25:33,546 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-summary.json wandb-summary.json
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_3_6d660a8428b942a27e45.png media/images/examples_3_6d660a8428b942a27e45.png
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_6_0e9724805d86b1b2d1fe.png media/images/examples_6_0e9724805d86b1b2d1fe.png
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_8_0d13292746917fb65983.png media/images/examples_8_0d13292746917fb65983.png
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_4_9ef004c71bc910d2258b.png media/images/examples_4_9ef004c71bc910d2258b.png
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_1_9b08cb2e9180f2760638.png media/images/examples_1_9b08cb2e9180f2760638.png
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_2_bcffa1a8087186341bb7.png media/images/examples_2_bcffa1a8087186341bb7.png
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_0_525f4d9a0063533ca36d.png media/images/examples_0_525f4d9a0063533ca36d.png
+2023-03-11 11:25:33,558 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_9_02b05911686c49948ffa.png media/images/examples_9_02b05911686c49948ffa.png
+2023-03-11 11:25:33,559 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_5_cb14507203f6f6d5f602.png media/images/examples_5_cb14507203f6f6d5f602.png
+2023-03-11 11:25:33,559 INFO    SenderThread:10459 [dir_watcher.py:finish():406] scan save: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/media/images/examples_7_9137f3fe872503a35a2e.png media/images/examples_7_9137f3fe872503a35a2e.png
+2023-03-11 11:25:33,559 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 10
+2023-03-11 11:25:33,559 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: poll_exit
+2023-03-11 11:25:33,559 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:33,560 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 10
+2023-03-11 11:25:33,560 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:33,560 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 10
+2023-03-11 11:25:33,560 INFO    SenderThread:10459 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-11 11:25:34,368 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-11 11:25:34,369 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: poll_exit
+2023-03-11 11:25:34,678 INFO    wandb-upload_2:10459 [upload_job.py:push():138] Uploaded file /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/config.yaml
+2023-03-11 11:25:34,679 INFO    wandb-upload_5:10459 [upload_job.py:push():138] Uploaded file /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/requirements.txt
+2023-03-11 11:25:34,757 INFO    wandb-upload_6:10459 [upload_job.py:push():138] Uploaded file /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/files/wandb-summary.json
+2023-03-11 11:25:34,957 INFO    Thread-24 (_thread_body):10459 [sender.py:transition_state():587] send defer: 11
+2023-03-11 11:25:34,958 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:34,958 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 11
+2023-03-11 11:25:34,958 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:34,959 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 11
+2023-03-11 11:25:34,959 INFO    SenderThread:10459 [file_pusher.py:join():167] waiting for file pusher
+2023-03-11 11:25:34,959 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 12
+2023-03-11 11:25:34,959 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:34,959 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 12
+2023-03-11 11:25:34,960 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:34,960 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 12
+2023-03-11 11:25:35,378 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-11 11:25:35,642 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 13
+2023-03-11 11:25:35,643 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: poll_exit
+2023-03-11 11:25:35,643 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:35,644 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 13
+2023-03-11 11:25:35,644 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:35,644 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 13
+2023-03-11 11:25:35,645 INFO    SenderThread:10459 [sender.py:transition_state():587] send defer: 14
+2023-03-11 11:25:35,645 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: defer
+2023-03-11 11:25:35,646 INFO    HandlerThread:10459 [handler.py:handle_request_defer():170] handle defer: 14
+2023-03-11 11:25:35,646 DEBUG   SenderThread:10459 [sender.py:send():336] send: final
+2023-03-11 11:25:35,646 DEBUG   SenderThread:10459 [sender.py:send():336] send: footer
+2023-03-11 11:25:35,646 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: defer
+2023-03-11 11:25:35,647 INFO    SenderThread:10459 [sender.py:send_request_defer():583] handle sender defer: 14
+2023-03-11 11:25:35,648 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: poll_exit
+2023-03-11 11:25:35,649 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: server_info
+2023-03-11 11:25:35,649 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: poll_exit
+2023-03-11 11:25:35,649 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: get_summary
+2023-03-11 11:25:35,650 DEBUG   SenderThread:10459 [sender.py:send_request():363] send_request: server_info
+2023-03-11 11:25:35,650 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: sampled_history
+2023-03-11 11:25:36,844 DEBUG   HandlerThread:10459 [handler.py:handle_request():144] handle_request: shutdown
+2023-03-11 11:25:36,844 INFO    HandlerThread:10459 [handler.py:finish():841] shutting down handler
+2023-03-11 11:25:37,650 INFO    WriterThread:10459 [datastore.py:close():299] close: /home/sooraj/sem/dl/assignment-1/wandb/run-20230311_112433-wyufw46x/run-wyufw46x.wandb
+2023-03-11 11:25:37,843 INFO    SenderThread:10459 [sender.py:finish():1493] shutting down sender
+2023-03-11 11:25:37,843 INFO    SenderThread:10459 [file_pusher.py:finish():162] shutting down file pusher
+2023-03-11 11:25:37,843 INFO    SenderThread:10459 [file_pusher.py:join():167] waiting for file pusher

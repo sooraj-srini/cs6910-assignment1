@@ -1,0 +1,1 @@
+{"examples": {"_type": "image-file", "sha256": "47d5872f979819dc3fc2719d3bdf1f3a22b4df074a81ad09a902db43bca104e3", "size": 33596, "path": "media/images/examples_9_47d5872f979819dc3fc2.png", "format": "png", "width": 432, "height": 288, "caption": "Label: Shirt"}, "_timestamp": 1678513966.9618273, "_runtime": 9.459710359573364, "_step": 9, "_wandb": {"runtime": 4}}
