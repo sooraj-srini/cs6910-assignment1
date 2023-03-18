@@ -21,25 +21,21 @@ class Momentum:
     def __init__(self, params, learning_rate: float, momentum: float = 0.9):
         self.learning_rate = learning_rate
         self.momentum = momentum
-        self.vW = None
-        self.vb = None
         self.parameters = params
         self.weights = params.weights
         self.bias = params.bias
+        self.zero_grad()
 
     def zero_grad(self):
-        self.vW = None
-        self.vb = None
+        self.vW = [None] * len(self.weights)
+        self.vb = [None] * len(self.weights)
+        for i in range(1, len(self.weights)):
+            self.vW[i] = np.zeros(self.weights[i].shape)
+            self.vb[i] = np.zeros(self.bias[i].shape)
 
     def step(self):
         dW = self.parameters.dW
         db = self.parameters.db
-        if self.vW is None:
-            self.vW = [None] * len(self.weights)
-            self.vb = [None] * len(self.weights)
-            for i in range(1, len(self.weights)):
-                self.vW[i] = np.zeros(self.weights[i].shape)
-                self.vb[i] = np.zeros(self.bias[i].shape)
 
         for i in range(1, len(self.weights)):
             self.vW[i] = self.momentum * self.vW[i] + dW[i]
@@ -51,25 +47,20 @@ class RMSProp:
     def __init__(self, params, learning_rate: float, decay_rate: float = 0.9, epsilon: float = 1e-7):
         self.learning_rate = learning_rate
         self.decay_rate = decay_rate
-        self.sW = None
-        self.sb = None
         self.params = params
         self.weights = params.weights
         self.bias = params.bias
         self.epsilon = epsilon
+        self.zero_grad()
     def zero_grad(self):
-        self.sW = None
-        self.sb = None
+        self.sW = [None] * len(self.weights)
+        self.sb = [None] * len(self.weights)
+        for i in range(1, len(self.weights)):
+            self.sW[i] = np.zeros(self.weights[i].shape)
+            self.sb[i] = np.zeros(self.bias[i].shape)
     def step(self):
         dW = self.params.dW
         db = self.params.db
-
-        if self.sW is None:
-            self.sW = [None] * len(self.weights)
-            self.sb = [None] * len(self.weights)
-            for i in range(1, len(self.weights)):
-                self.sW[i] = np.zeros(self.weights[i].shape)
-                self.sb[i] = np.zeros(self.bias[i].shape)
 
         for i in range(1, len(self.weights)):
             self.sW[i] = self.decay_rate * self.sW[i] + (1 - self.decay_rate) * dW[i]**2
@@ -82,33 +73,26 @@ class Adam:
         self.learning_rate = learning_rate
         self.decay_rate = decay_rate
         self.momentum = momentum
-        self.sW = None
-        self.sb = None
-        self.vW = None
-        self.vb = None
         self.params = params
         self.weights = params.weights
         self.bias = params.bias
         self.epsilon = epsilon
         self.t = 0
+        self.zero_grad()
     def zero_grad(self):
-        self.sW = None
-        self.sb = None
-        self.vW = None
-        self.vb = None
+        self.sW = [None] * len(self.weights)
+        self.sb = [None] * len(self.weights)
+        self.vW = [None] * len(self.weights)
+        self.vb = [None] * len(self.weights)
+        for i in range(1, len(self.weights)):
+            self.sW[i] = np.zeros(self.weights[i].shape)
+            self.sb[i] = np.zeros(self.bias[i].shape)
+            self.vW[i] = np.zeros(self.weights[i].shape)
+            self.vb[i] = np.zeros(self.bias[i].shape)
+    
     def step(self):
         dW = self.params.dW
         db = self.params.db
-        if self.sW is None:
-            self.sW = [None] * len(self.weights)
-            self.sb = [None] * len(self.weights)
-            self.vW = [None] * len(self.weights)
-            self.vb = [None] * len(self.weights)
-            for i in range(1, len(self.weights)):
-                self.sW[i] = np.zeros(self.weights[i].shape)
-                self.sb[i] = np.zeros(self.bias[i].shape)
-                self.vW[i] = np.zeros(self.weights[i].shape)
-                self.vb[i] = np.zeros(self.bias[i].shape)
 
         self.t += 1
         for i in range(1, len(self.weights)):
@@ -126,13 +110,6 @@ class Adam:
 class NAG(Momentum):
     # Implement Nesterov accelerated gradient descent 
     def step(self):
-        if self.vW is None:
-            self.vW = [None] * len(self.weights)
-            self.vb = [None] * len(self.weights)
-            for i in range(1, len(self.weights)):
-                self.vW[i] = np.zeros(self.weights[i].shape)
-                self.vb[i] = np.zeros(self.bias[i].shape)
-
         # Look ahead
 
         for i in range(1, len(self.weights)):
@@ -157,17 +134,6 @@ class NAdam(Adam):
     def step(self):
         dW = self.params.dW
         db = self.params.db
-        if self.sW is None:
-            self.sW = [None] * len(self.weights)
-            self.sb = [None] * len(self.weights)
-            self.vW = [None] * len(self.weights)
-            self.vb = [None] * len(self.weights)
-            for i in range(1, len(self.weights)):
-                self.sW[i] = np.zeros(self.weights[i].shape)
-                self.sb[i] = np.zeros(self.bias[i].shape)
-                self.vW[i] = np.zeros(self.weights[i].shape)
-                self.vb[i] = np.zeros(self.bias[i].shape)
-
         self.t += 1
         for i in range(1, len(self.weights)):
             self.vW[i] = self.momentum * self.vW[i] + (1 - self.momentum) * dW[i]
@@ -304,6 +270,9 @@ class FeedforwardNN:
         self.parameters.y_pred  = X
         self.parameters.pre_activation = pre_activation
         self.parameters.activation = activation
+        for i in range(1, len(self.parameters.weights) - 1):
+            assert not np.isnan(self.parameters.weights[i]).any(), "Weights are NaN"
+            assert not np.isnan(self.parameters.bias[i]).any(), "Bias are NaN"
 
     def backward(self):
         pre_activation = self.parameters.pre_activation
@@ -340,12 +309,9 @@ class FeedforwardNN:
         self.parameters.db = db
 
     def fit(self, X_train, y_train, learning_rate, max_iterations, batch):
-        # opt = SGD(self.get_params(), learning_rate)
-        # opt = Momentum(self.get_params(), learning_rate, 0.9)
-        # opt = NAG(self.get_params(), learning_rate, 0.9)
         opt = RMSProp(self.get_params(), learning_rate, 0.9)
-        # opt = Adam(self.get_params(), learning_rate, 0.9, 0.999)
-        # opt = NAdam(self.get_params(), learning_rate, 0.9, 0.999)
+        opt = SGD(self.get_params(), learning_rate)
+        opt = NAdam(self.get_params(), learning_rate, 0.9, 0.999)
         for iter in range(max_iterations):
             opt.zero_grad()
             print("Iteration: ", iter)
@@ -368,9 +334,14 @@ class FeedforwardNN:
 
 
     def cross_entropy_loss(self, y_train, y_pred, regularization=False):
-        loss =  -np.sum(y_train*np.log(y_pred))/len(y_train)
+        eps = np.finfo(float).eps
+        loss =  -np.sum(y_train*np.log(y_pred + eps))/len(y_train)
         if regularization:
             loss += self.weight_decay * sum([np.sum(np.square(w)) for w in self.parameters.weights[1:]])/(2*sum([w.size for w in self.parameters.weights[1:]]))
         return loss
+    def mean_squared_error(self, y_train, y_pred, regularization=False):
+        loss = np.sum(np.square(y_train - y_pred))/y_train.shape[0]
+        if regularization:
+            loss += self.weight_decay * sum([np.sum(np.square(w)) for w in self.parameters.weights[1:]])/(2*sum([w.size for w in self.parameters.weights[1:]]))
     def accuracy(self, y_train, y_pred):
         return (np.argmax(y_train,axis=1) == np.argmax(y_pred, axis=1)).sum() / (y_train.shape[0])

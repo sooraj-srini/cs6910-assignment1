@@ -1,0 +1,17 @@
+Epoch:  1
+Iteration  1  of  5
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:222: RuntimeWarning: overflow encountered in exp
+  return 1 / (1 + np.exp(-x))
+Train Loss:  0.8713234517987113  Train Accuracy:  0.6936296296296296  Val Loss:  0.8811007993570706  Val Accuracy:  0.6876666666666666
+Epoch:  2
+Iteration  2  of  5
+Train Loss:  0.7860900282530897  Train Accuracy:  0.7072407407407407  Val Loss:  0.7931004569479223  Val Accuracy:  0.7015
+Epoch:  3
+Iteration  3  of  5
+Train Loss:  0.8307051810480914  Train Accuracy:  0.6843888888888889  Val Loss:  0.8353278363873973  Val Accuracy:  0.6831666666666667
+Epoch:  4
+Iteration  4  of  5
+Train Loss:  0.7852003669790226  Train Accuracy:  0.6987037037037037  Val Loss:  0.7930163887601807  Val Accuracy:  0.6936666666666667
+Epoch:  5
+Iteration  5  of  5
+Train Loss:  1.0306826319336881  Train Accuracy:  0.6218703703703704  Val Loss:  1.0209569889943986  Val Accuracy:  0.6195

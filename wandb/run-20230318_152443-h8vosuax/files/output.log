@@ -1,0 +1,40 @@
+Epoch:  1
+Iteration  1  of  10
+Train Loss:  0.9884162480827151  Train Accuracy:  0.6662037037037037  Val Loss:  0.8947347585958719  Val Accuracy:  0.6653333333333333
+Epoch:  2
+Iteration  2  of  10
+Train Loss:  0.7164384915590849  Train Accuracy:  0.7511296296296296  Val Loss:  0.6947988280779306  Val Accuracy:  0.7413333333333333
+Epoch:  3
+Iteration  3  of  10
+Train Loss:  0.5751809722023599  Train Accuracy:  0.7992962962962963  Val Loss:  0.5742990377412752  Val Accuracy:  0.7946666666666666
+Epoch:  4
+Iteration  4  of  10
+[34m[1mwandb[39m[22m: Ctrl + C detected. Stopping sweep.
+Train Loss:  0.4934586900663394  Train Accuracy:  0.8252407407407407  Val Loss:  0.5065041628640843  Val Accuracy:  0.8171666666666667
+Epoch:  5
+Iteration  5  of  10
+Train Loss:  0.45146074329008984  Train Accuracy:  0.8435185185185186  Val Loss:  0.46717150074665265  Val Accuracy:  0.832
+Epoch:  6
+Iteration  6  of  10
+Train Loss:  0.4340771418495237  Train Accuracy:  0.8499629629629629  Val Loss:  0.44935815777573485  Val Accuracy:  0.8415
+Epoch:  7
+Iteration  7  of  10
+Exception in thread SystemMonitor:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/sooraj/.local/lib/python3.10/site-packages/wandb/sdk/internal/system/system_monitor.py", line 118, in _start
+    asset.start()
+  File "/home/sooraj/.local/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/network.py", line 97, in start
+    self.metrics_monitor.start()
+  File "/home/sooraj/.local/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/interfaces.py", line 168, in start
+    logger.info(f"Started {self._process.name}")
+AttributeError: 'NoneType' object has no attribute 'name'
+Train Loss:  0.4328132658039677  Train Accuracy:  0.8506296296296296  Val Loss:  0.44853458083553144  Val Accuracy:  0.8433333333333334
+Epoch:  8
+Iteration  8  of  10
+Create sweep with ID: 3vui3oak
+Sweep URL: https://wandb.ai/cs20b075/assignment-1/sweeps/3vui3oak
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.

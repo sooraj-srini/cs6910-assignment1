@@ -1,0 +1,38 @@
+8
+Iteration:  0
+Exception in thread SystemMonitor:
+Traceback (most recent call last):
+  File "/usr/lib/python3.10/threading.py", line 1016, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.10/threading.py", line 953, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/sooraj/.local/lib/python3.10/site-packages/wandb/sdk/internal/system/system_monitor.py", line 118, in _start
+    asset.start()
+  File "/home/sooraj/.local/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/cpu.py", line 166, in start
+    self.metrics_monitor.start()
+  File "/home/sooraj/.local/lib/python3.10/site-packages/wandb/sdk/internal/system/assets/interfaces.py", line 168, in start
+    logger.info(f"Started {self._process.name}")
+AttributeError: 'NoneType' object has no attribute 'name'
+Loss:  13.92686718451721
+Iteration:  1
+Loss:  9.909334781756172
+Iteration:  2
+Loss:  8.719894219915302
+Iteration:  3
+Loss:  8.035732280584838
+Iteration:  4
+Loss:  7.51309930644264
+Iteration:  5
+Loss:  7.032517261254411
+Iteration:  6
+Loss:  6.796898564099629
+Iteration:  7
+Loss:  6.447141631212641
+Iteration:  8
+Loss:  6.210187983932332
+Iteration:  9
+Loss:  5.9158314812545445
+Accuracy  0.7991666666666667
+[34m[1mwandb[39m[22m: [33mWARNING[39m Calling wandb.login() after wandb.init() has no effect.
+Create sweep with ID: h84a40ar
+Sweep URL: https://wandb.ai/cs20b075/assignment-1/sweeps/h84a40ar

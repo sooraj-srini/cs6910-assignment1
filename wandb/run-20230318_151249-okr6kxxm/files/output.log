@@ -1,0 +1,34 @@
+Epoch:  1
+Iteration  1  of  10
+Train Loss:  nan  Train Accuracy:  0.39425925925925925  Val Loss:  nan  Val Accuracy:  0.39066666666666666
+Epoch:  2
+Iteration  2  of  10
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:332: RuntimeWarning: divide by zero encountered in log
+  loss =  -np.sum(y_train*np.log(y_pred))/len(y_train)
+/home/sooraj/sem/dl/assignment-1/feedforwardnn.py:332: RuntimeWarning: invalid value encountered in multiply
+  loss =  -np.sum(y_train*np.log(y_pred))/len(y_train)
+Train Loss:  nan  Train Accuracy:  0.5424444444444444  Val Loss:  nan  Val Accuracy:  0.5423333333333333
+Epoch:  3
+Iteration  3  of  10
+Train Loss:  nan  Train Accuracy:  0.5907222222222223  Val Loss:  nan  Val Accuracy:  0.588
+Epoch:  4
+Iteration  4  of  10
+Train Loss:  nan  Train Accuracy:  0.6151296296296296  Val Loss:  nan  Val Accuracy:  0.6061666666666666
+Epoch:  5
+Iteration  5  of  10
+Train Loss:  nan  Train Accuracy:  0.6301666666666667  Val Loss:  nan  Val Accuracy:  0.6258333333333334
+Epoch:  6
+Iteration  6  of  10
+Train Loss:  nan  Train Accuracy:  0.6432777777777777  Val Loss:  nan  Val Accuracy:  0.6406666666666667
+Epoch:  7
+Iteration  7  of  10
+Train Loss:  nan  Train Accuracy:  0.6508888888888889  Val Loss:  nan  Val Accuracy:  0.6526666666666666
+Epoch:  8
+Iteration  8  of  10
+Train Loss:  nan  Train Accuracy:  0.6571851851851852  Val Loss:  nan  Val Accuracy:  0.6545
+Epoch:  9
+Iteration  9  of  10
+Train Loss:  nan  Train Accuracy:  0.6604444444444444  Val Loss:  nan  Val Accuracy:  0.6546666666666666
+Epoch:  10
+Iteration  10  of  10
+Train Loss:  nan  Train Accuracy:  0.665037037037037  Val Loss:  nan  Val Accuracy:  0.6608333333333334

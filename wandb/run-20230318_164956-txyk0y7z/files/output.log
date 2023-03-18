@@ -1,0 +1,15 @@
+Epoch:  1
+Iteration  1  of  5
+Train Loss:  0.7133912428283607  Train Accuracy:  0.737537037037037  Val Loss:  0.7300993654669043  Val Accuracy:  0.729
+Epoch:  2
+Iteration  2  of  5
+Train Loss:  0.6879317343992183  Train Accuracy:  0.7379629629629629  Val Loss:  0.6959308911906628  Val Accuracy:  0.7385
+Epoch:  3
+Iteration  3  of  5
+Train Loss:  0.649879116284041  Train Accuracy:  0.7558333333333334  Val Loss:  0.6614496153592588  Val Accuracy:  0.7488333333333334
+Epoch:  4
+Iteration  4  of  5
+Train Loss:  0.6297014955278942  Train Accuracy:  0.7629259259259259  Val Loss:  0.6342319485979059  Val Accuracy:  0.759
+Epoch:  5
+Iteration  5  of  5
+Train Loss:  0.6557967635050976  Train Accuracy:  0.753537037037037  Val Loss:  0.6672229791452664  Val Accuracy:  0.747
