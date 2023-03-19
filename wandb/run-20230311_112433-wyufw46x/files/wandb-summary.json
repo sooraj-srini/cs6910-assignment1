@@ -1,1 +1,0 @@
-{"examples": {"_type": "image-file", "sha256": "02b05911686c49948ffa93a7b3ce2045c52ba1ee7c31233c32a770e67c2ea772", "size": 36398, "path": "media/images/examples_9_02b05911686c49948ffa.png", "format": "png", "width": 432, "height": 288, "caption": "Image for each class"}, "_timestamp": 1678514083.8077211, "_runtime": 5.249667167663574, "_step": 9, "_wandb": {"runtime": 51}}
