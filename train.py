@@ -3,11 +3,17 @@ import feedforwardnn
 import wandb
 import numpy as np
 from keras.datasets import fashion_mnist
+from keras.datasets import mnist
 wandb.login()
 
-def split_data():
-    (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
-    p = np.random.RandomState(seed=42).permutation(len(x_train))
+def split_data(dataset:str):
+    x_train = y_train = x_val = y_val = x_test = y_test = None
+    if dataset == "fashion_mnist":
+        (x_train, y_train), (x_test, y_test) = fashion_mnist.load_data()
+    else:
+        (x_train, y_train), (x_test, y_test) = mnist.load_data()
+        
+    p = np.random.RandomState().permutation(len(x_train))
     x_train, y_train = x_train[p], y_train[p]
     train_length = int(0.9 * len(x_train))
 
@@ -17,12 +23,15 @@ def split_data():
     def one_hot(X:np.ndarray):
             return np.eye(10)[X]
     
-    x_train = x_train.reshape(x_train.shape[0], -1)
-    y_train  = one_hot(y_train)
-    x_val = x_val.reshape(x_val.shape[0], -1)
-    y_val  = one_hot(y_val)
-    x_test = x_test.reshape(x_test.shape[0], -1)
-    y_test  = one_hot(y_test)
+    def process_data(X, Y):
+        X = X.reshape(X.shape[0], -1)/255
+        Y = one_hot(Y)
+        return X, Y
+
+    x_train, y_train = process_data(x_train, y_train)
+    x_val, y_val = process_data(x_val, y_val)
+    x_test, y_test = process_data(x_test, y_test)
+
 
     return x_train, y_train, x_val, y_val, x_test, y_test
 
@@ -84,5 +93,5 @@ if __name__ == "__main__":
     parser.add_argument("-a", "--activation", help="Activation function", type=str, default="relu", choices=["identity", "sigmoid", "ReLU", "tanh"])
     args = parser.parse_args()
 
-    x_train, y_train, x_val, y_val, x_test, y_test = split_data()
+    x_train, y_train, x_val, y_val, x_test, y_test = split_data(args.dataset)
     train(args)

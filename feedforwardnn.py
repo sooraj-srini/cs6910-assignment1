@@ -2,8 +2,18 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
+class Optimizer:
+    def __init__(self, parameters, learning_rate: float):
+        self.learning_rate = learning_rate
+        self.parameters = parameters
 
-class SGD:
+    def zero_grad(self):
+        pass
+
+    def step(self):
+        pass
+
+class SGD(Optimizer):
     def __init__(self, parameters, learning_rate: float):
         self.learning_rate = learning_rate
         self.parameters = parameters
@@ -17,7 +27,7 @@ class SGD:
             self.parameters.bias[i] -= self.learning_rate * self.parameters.db[i]
 
 
-class Momentum:
+class Momentum(Optimizer):
     def __init__(self, params, learning_rate: float, momentum: float = 0.9):
         self.learning_rate = learning_rate
         self.momentum = momentum
@@ -43,7 +53,7 @@ class Momentum:
             self.weights[i] -= self.learning_rate*self.uW[i]
             self.bias[i] -= self.learning_rate*self.ub[i]
 
-class RMSProp:
+class RMSProp(Optimizer):
     def __init__(self, params, learning_rate: float, decay_rate: float = 0.9, epsilon: float = 1e-7):
         self.learning_rate = learning_rate
         self.decay_rate = decay_rate
@@ -68,7 +78,7 @@ class RMSProp:
             self.weights[i] -= self.learning_rate * dW[i] / (np.sqrt(self.vW[i]) + self.epsilon)
             self.bias[i] -= self.learning_rate * db[i] / (np.sqrt(self.vb[i]) + self.epsilon)
 
-class Adam:
+class Adam(Optimizer):
     def __init__(self,params,learning_rate: float, momentum: float = 0.9, decay_rate:float = 0.999, epsilon: float = 1e-7):
         self.learning_rate = learning_rate
         self.decay_rate = decay_rate
@@ -141,7 +151,7 @@ class FeedforwardNN:
     class Parameters:
         def __init__(self):
             pass
-    def __init__(self, input_size: int, output_size: int, hidden_size_layers: list[int], activation_function: str, weight_init:str, weight_decay: float = 0.0):
+    def __init__(self, input_size: int, output_size: int, hidden_size_layers: list[int], activation_function: str, weight_init:str, weight_decay: float = 0.0, loss:str='cross_entropy'):
         self.parameters = self.Parameters()
         self.input_size = input_size
         self.hidden_size_layers = hidden_size_layers
@@ -152,6 +162,7 @@ class FeedforwardNN:
         self.parameters.bias: list[np.ndarray] = [None]
         self.layers = len(hidden_size_layers) + 1
         self.weight_decay = weight_decay
+        self.loss_func = loss
 
         # Initalise weights
         self.init_weights(weight_init)
@@ -278,8 +289,14 @@ class FeedforwardNN:
 
         def one_hot(X: np.ndarray):
             return np.eye(10)[X - np.ones(X.shape, dtype=int)]
-
-        dlda[L] = -(y_train - y_pred)
+        if self.loss_func == "cross_entropy":
+            dlda[L] = -(y_train - y_pred)
+        elif self.loss_func == "mean_squared_error":
+            # find the softmax error for mean squared error
+            diff = (y_pred - y_train)*y_pred
+            sum_layer = np.sum(diff, axis=1, keepdims=True)
+            softmax_diff = sum_layer*y_pred
+            dlda[L] = diff - softmax_diff
         for layer in range(L, 0, -1):
             dW[layer] = activation[layer-1].T@dlda[layer]
             db[layer] = np.expand_dims(np.sum(dlda[layer], axis=0), axis=0)
@@ -297,7 +314,7 @@ class FeedforwardNN:
         self.parameters.dW = dW
         self.parameters.db = db
 
-    def fit(self, X_train, y_train, learning_rate, max_iterations, batch, opt):
+    def fit(self, X_train:np.ndarray, y_train:np.ndarray,max_iterations:int, batch:int, opt):
         for iter in range(max_iterations):
             opt.zero_grad()
             print("Iteration: ", iter)
@@ -308,9 +325,12 @@ class FeedforwardNN:
                 self.backward()
                 opt.step()
             y_iter_pred = self.predict(X_train)
-            print("Loss: ", self.cross_entropy_loss(y_train, y_iter_pred, regularization=True))
+            if self.loss_func == "cross_entropy":
+                print("Cross Entropy Loss: ", self.cross_entropy_loss(y_train, y_iter_pred, regularization=True))
+            elif self.loss_func == "mean_squared_error":
+                print("Mean Squared Loss: ", self.mean_squared_error(y_train, y_iter_pred, regularization=True))
 
-    def predict(self, X_test):
+    def predict(self, X_test:np.ndarray):
         self.forward(X_test)
         return self.parameters.y_pred
         # return np.argmax(y_pred, axis=1)
@@ -319,7 +339,7 @@ class FeedforwardNN:
         return self.parameters
 
 
-    def cross_entropy_loss(self, y_train, y_pred, regularization=False):
+    def cross_entropy_loss(self, y_train:np.ndarray, y_pred:np.ndarray, regularization=False):
         eps = np.finfo(float).eps
         loss =  -np.sum(y_train*np.log(y_pred + eps))/len(y_train)
         if regularization:
