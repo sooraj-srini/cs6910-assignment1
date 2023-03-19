@@ -1,0 +1,57 @@
+2023-03-19 21:10:14,500 INFO    StreamThr :34502 [internal.py:wandb_internal():87] W&B internal server running at pid: 34502, started at: 2023-03-19 21:10:14.500055
+2023-03-19 21:10:14,501 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: status
+2023-03-19 21:10:14,522 INFO    WriterThread:34502 [datastore.py:open_for_write():85] open: /home/sooraj/sem/dl/assignment-1/wandb/run-20230319_211014-6nbuqtit/run-6nbuqtit.wandb
+2023-03-19 21:10:14,523 DEBUG   SenderThread:34502 [sender.py:send():336] send: header
+2023-03-19 21:10:14,527 DEBUG   SenderThread:34502 [sender.py:send():336] send: run
+2023-03-19 21:10:15,285 INFO    SenderThread:34502 [dir_watcher.py:__init__():216] watching files in: /home/sooraj/sem/dl/assignment-1/wandb/run-20230319_211014-6nbuqtit/files
+2023-03-19 21:10:15,285 INFO    SenderThread:34502 [sender.py:_start_run_threads():1067] run started: 6nbuqtit with start time 1679240414.502153
+2023-03-19 21:10:15,285 DEBUG   SenderThread:34502 [sender.py:send_request():363] send_request: summary_record
+2023-03-19 21:10:15,285 INFO    SenderThread:34502 [sender.py:_save_file():1321] saving file wandb-summary.json with policy end
+2023-03-19 21:10:15,290 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: check_version
+2023-03-19 21:10:15,291 DEBUG   SenderThread:34502 [sender.py:send_request():363] send_request: check_version
+2023-03-19 21:10:15,399 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: run_start
+2023-03-19 21:10:15,401 DEBUG   HandlerThread:34502 [system_info.py:__init__():31] System info init
+2023-03-19 21:10:15,401 DEBUG   HandlerThread:34502 [system_info.py:__init__():46] System info init done
+2023-03-19 21:10:15,401 INFO    HandlerThread:34502 [system_monitor.py:start():151] Starting system monitor
+2023-03-19 21:10:15,401 INFO    SystemMonitor:34502 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-03-19 21:10:15,401 INFO    HandlerThread:34502 [system_monitor.py:probe():172] Collecting system info
+2023-03-19 21:10:15,402 INFO    SystemMonitor:34502 [interfaces.py:start():168] Started cpu
+2023-03-19 21:10:15,402 INFO    SystemMonitor:34502 [interfaces.py:start():168] Started disk
+2023-03-19 21:10:15,403 INFO    SystemMonitor:34502 [interfaces.py:start():168] Started memory
+2023-03-19 21:10:15,403 INFO    SystemMonitor:34502 [interfaces.py:start():168] Started network
+2023-03-19 21:10:15,405 DEBUG   HandlerThread:34502 [system_info.py:probe():195] Probing system
+2023-03-19 21:10:15,405 DEBUG   HandlerThread:34502 [system_info.py:_probe_git():180] Probing git
+2023-03-19 21:10:15,410 DEBUG   HandlerThread:34502 [system_info.py:_probe_git():188] Probing git done
+2023-03-19 21:10:15,410 DEBUG   HandlerThread:34502 [system_info.py:probe():241] Probing system done
+2023-03-19 21:10:15,410 DEBUG   HandlerThread:34502 [system_monitor.py:probe():181] {'os': 'Linux-6.2.6-zen1-1-zen-x86_64-with-glibc2.37', 'python': '3.10.10', 'heartbeatAt': '2023-03-19T15:40:15.405587', 'startedAt': '2023-03-19T15:40:14.492420', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://www.github.com/sooraj-srini/cs6910-assignment1', 'commit': '98e12607e6397ec0afa5cba12de49bcf47b22c0d'}, 'email': 'cs20b075@smail.iitm.ac.in', 'root': '/home/sooraj/sem/dl/assignment-1', 'host': 'archbtw', 'username': 'sooraj', 'executable': '/bin/python', 'cpu_count': 4, 'cpu_count_logical': 8, 'cpu_freq': {'current': 2.7478749999999996, 'min': 400.0, 'max': 4700.0}, 'cpu_freq_per_core': [{'current': 1.469, 'min': 400.0, 'max': 4700.0}, {'current': 2.884, 'min': 400.0, 'max': 4700.0}, {'current': 2.8, 'min': 400.0, 'max': 4700.0}, {'current': 2.885, 'min': 400.0, 'max': 4700.0}, {'current': 0.785, 'min': 400.0, 'max': 4700.0}, {'current': 2.833, 'min': 400.0, 'max': 4700.0}, {'current': 2.665, 'min': 400.0, 'max': 4700.0}, {'current': 2.884, 'min': 400.0, 'max': 4700.0}], 'disk': {'total': 48.912994384765625, 'used': 40.862396240234375}, 'memory': {'total': 11.417949676513672}}
+2023-03-19 21:10:15,410 INFO    HandlerThread:34502 [system_monitor.py:probe():182] Finished collecting system info
+2023-03-19 21:10:15,410 INFO    HandlerThread:34502 [system_monitor.py:probe():185] Publishing system info
+2023-03-19 21:10:15,410 DEBUG   HandlerThread:34502 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-03-19 21:10:15,410 DEBUG   HandlerThread:34502 [system_info.py:_save_pip():67] Saving pip packages done
+2023-03-19 21:10:15,410 INFO    HandlerThread:34502 [system_monitor.py:probe():187] Finished publishing system info
+2023-03-19 21:10:15,410 DEBUG   SenderThread:34502 [sender.py:send():336] send: files
+2023-03-19 21:10:15,411 INFO    SenderThread:34502 [sender.py:_save_file():1321] saving file wandb-metadata.json with policy now
+2023-03-19 21:10:15,420 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: stop_status
+2023-03-19 21:10:15,420 DEBUG   SenderThread:34502 [sender.py:send_request():363] send_request: stop_status
+2023-03-19 21:10:16,089 DEBUG   SenderThread:34502 [sender.py:send():336] send: telemetry
+2023-03-19 21:10:16,287 INFO    Thread-25 :34502 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230319_211014-6nbuqtit/files/wandb-summary.json
+2023-03-19 21:10:16,288 INFO    Thread-25 :34502 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230319_211014-6nbuqtit/files/output.log
+2023-03-19 21:10:16,288 INFO    Thread-25 :34502 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230319_211014-6nbuqtit/files/requirements.txt
+2023-03-19 21:10:16,288 INFO    Thread-25 :34502 [dir_watcher.py:_on_file_created():275] file/dir created: /home/sooraj/sem/dl/assignment-1/wandb/run-20230319_211014-6nbuqtit/files/wandb-metadata.json
+2023-03-19 21:10:16,558 INFO    wandb-upload_0:34502 [upload_job.py:push():138] Uploaded file /tmp/tmprdm1ofx8wandb/k3vngm6o-wandb-metadata.json
+2023-03-19 21:10:17,183 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: pause
+2023-03-19 21:10:17,183 INFO    HandlerThread:34502 [handler.py:handle_request_pause():717] stopping system metrics thread or process
+2023-03-19 21:10:17,183 INFO    HandlerThread:34502 [system_monitor.py:finish():161] Stopping system monitor
+2023-03-19 21:10:17,184 DEBUG   SystemMonitor:34502 [system_monitor.py:_start():130] Starting system metrics aggregation loop
+2023-03-19 21:10:17,184 DEBUG   SystemMonitor:34502 [system_monitor.py:_start():137] Finished system metrics aggregation loop
+2023-03-19 21:10:17,184 DEBUG   SystemMonitor:34502 [system_monitor.py:_start():141] Publishing last batch of metrics
+2023-03-19 21:10:17,184 INFO    HandlerThread:34502 [interfaces.py:finish():175] Joined cpu
+2023-03-19 21:10:17,185 INFO    HandlerThread:34502 [interfaces.py:finish():175] Joined disk
+2023-03-19 21:10:17,185 INFO    HandlerThread:34502 [interfaces.py:finish():175] Joined memory
+2023-03-19 21:10:17,185 INFO    HandlerThread:34502 [interfaces.py:finish():175] Joined network
+2023-03-19 21:10:17,185 DEBUG   SenderThread:34502 [sender.py:send():336] send: stats
+2023-03-19 21:10:18,286 INFO    Thread-25 :34502 [dir_watcher.py:_on_file_modified():292] file/dir modified: /home/sooraj/sem/dl/assignment-1/wandb/run-20230319_211014-6nbuqtit/files/output.log
+2023-03-19 21:10:20,186 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: status_report
+2023-03-19 21:10:25,187 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: status_report
+2023-03-19 21:10:30,188 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: status_report
+2023-03-19 21:10:30,420 DEBUG   HandlerThread:34502 [handler.py:handle_request():144] handle_request: keepalive
