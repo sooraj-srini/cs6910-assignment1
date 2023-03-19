@@ -36,5 +36,58 @@ Once the neural network is created there are two ways to train the model:
 To use the `fit` method, simply pass the following arguments:
 ```
 nn.fit(X_train, y_train, max_iterations, batch, opt)
+```
 
-Internally the feed forward neural network uses a class `Parameters` to share parameters between the model and the optimizer. 
+Internally the feed forward neural network uses a class `Parameters` to share parameters between the model and the optimizer. The optimizer gets the parameters through `nn.get_params()`. 
+
+To train the model using `forward` and `backward`, you can do something similar to this:
+```
+for iter in range(max_iterations):
+            opt.zero_grad()
+            for index in range(0, len(X_train), batch):
+                self.parameters.x_row = X_train[index:index + batch]
+                self.parameters.y_row = y_train[index:index + batch]
+                self.forward(self.parameters.x_row)
+                self.backward()
+                opt.step()
+```
+
+One can change this to be as fine tuned as possible.
+
+# Optimizers
+
+There are already optimizers provided in the `feedforwardnn.py` file. However, if you wish to add a new optimizer, here are some pointers:
+
+## `Parameters`
+
+The class `Parameters` provides you with the parameters of the neural network. Some of the noteworthy parameters in this class are:
+- self.weights
+- self.bias
+- self.dW
+- self.db 
+- self.x_row 
+- self.y_row 
+- self.y_pred 
+- self.forward 
+- self.backward 
+
+You can get the parameters of a `FeedforwardNN` class through `nn.get_params()`. 
+
+## `Optimizer`
+
+All optimizers must be inherited from class `Optimizer` in the `feedforwardnn.py` or at least implement the same methods:
+- `__init__()`
+- `zero_grad()`
+- `step()`
+
+This is also necessary for the `nn.fit()` method to work properly and for using the more finetuned version of training the model, even these methods are not necessary.
+
+# Evaluation of the model
+
+There are two loss functions provided in the `FeedforwardNN` class:
+- `cross_entropy_loss(y_train, y_pred)`
+- `mean_squared_error(y_train, y_pred)`
+
+You can check the accuracy of these models through `nn.accuracy(y_train, y_pred)`.
+
+**NOTE**: All of these error functions assume that $y$ is already one hot encoded. For the functions to work as desired, ensure that the data is properly processed.

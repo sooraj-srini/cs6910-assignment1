@@ -236,6 +236,11 @@ class FeedforwardNN:
 
         def derivative_tanh(x):
             return 1 - np.tanh(x)**2
+        
+        def identity(x):
+            return x
+        def derivative_identity(x):
+            return 1
 
         if func == "sigmoid":
             return sigmoid, derivative_sigmoid
@@ -243,6 +248,8 @@ class FeedforwardNN:
             return relu, derivative_relu
         elif func == "tanh":
             return tanh, derivative_tanh
+        elif func == "identity":
+            return identity, derivative_identity
         else:
             raise ValueError("Activation function not supported")
 
