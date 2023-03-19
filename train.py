@@ -89,11 +89,11 @@ if __name__ == "__main__":
     parser.add_argument("-beta1", "--beta1", help="Value of beta1", type=float, default=0.9)
     parser.add_argument("-beta2", "--beta2", help="Value of beta2", type=float, default=0.999)
     parser.add_argument("-eps", "--epsilon", help="Value of epsilon", type=float, default=1e-7)
-    parser.add_argument("-w_d", "--weight_decay", help="Value of weight decay", type=float, default=0)
+    parser.add_argument("-w_d", "--weight_decay", help="Value of weight decay", type=float, default=0.0005)
     parser.add_argument("-w_i", "--weight_init", help="Weight initialization", type=str, default="xavier", choices=["xavier",  "random"])
     parser.add_argument("-nhl", "--num_hidden_layers", help="Number of hidden layers", type=int, default=128)
     parser.add_argument("-sz", "--hidden_size", help="Size of hidden layers", type=int, default=4)
-    parser.add_argument("-a", "--activation", help="Activation function", type=str, default="relu", choices=["identity", "sigmoid", "ReLU", "tanh"])
+    parser.add_argument("-a", "--activation", help="Activation function", type=str, default="tanh", choices=["identity", "sigmoid", "relu", "tanh"])
     args = parser.parse_args()
 
     x_train, y_train, x_val, y_val, x_test, y_test = split_data(args.dataset)
